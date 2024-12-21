@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson Tribute Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #2e2e2e;
+            color: #f3f3f3;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(90deg, #4b4b4b, #1c1c1c);
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        .image-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-section img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1.5s;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            background: #1c1c1c;
+            gap: 20px;
+            animation: slideIn 1.5s;
+        }
+
+        .section div {
+            flex: 1;
+            padding: 20px;
+            background: #4b4b4b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .albums {
+            text-align: center;
+            padding: 50px;
+            background: #2e2e2e;
+        }
+
+        .albums h2 {
+            margin-bottom: 30px;
+        }
+
+        .albums-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .album {
+            width: 200px;
+            background: #4b4b4b;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .album:hover {
+            transform: scale(1.1);
+        }
+
+        .influence {
+            padding: 50px;
+            background: #1c1c1c;
+            text-align: center;
+        }
+
+        .influence p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .fun-facts {
+            padding: 50px;
+            background: #2e2e2e;
+            text-align: center;
+        }
+
+        .fun-facts h2 {
+            margin-bottom: 30px;
+        }
+
+        .fun-facts ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .fun-facts ul li {
+            margin-bottom: 15px;
+        }
+
+        .wiki-link {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4b4b4b;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Michael Jackson</h1>
+        <p>The King of Pop (1958 - 2009)</p>
+    </header>
+
+    <section class="image-section">
+        <img src="michael_jackson.jpg" alt="Michael Jackson">
+    </section>
+
+    <section class="section">
+        <div>
+            <h2>How He Got Into Music</h2>
+            <p>Michael Jackson showed an early interest in music, joining his family's band, "The Jackson 5," as a young boy. With his exceptional talent, he quickly became the star of the group, showcasing his charisma and impressive vocal abilities.</p>
+        </div>
+        <div>
+            <h2>The Rise of His Career</h2>
+            <p>Michael embarked on a solo career in the late 1970s, releasing albums like "Off the Wall" and "Thriller," which shattered records and established him as a global icon. His innovative music videos and legendary dance moves left an indelible mark on the music industry.</p>
+        </div>
+    </section>
+
+    <section class="albums">
+        <h2>Famous Albums and Singles</h2>
+        <div class="albums-container">
+            <div class="album">
+                <img src="t.jpg" alt="Thriller">
+                <p>Thriller - Jackson wanted to create an album where "every song was a killer"</p>
+            </div>
+            <div class="album">
+                <img src="b.jpg" alt="Bad">
+                <p>Bad</p>
+            </div>
+            <div class="album">
+                <img src="d.jpg" alt="Dangerous">
+                <p>Dangerous</p>
+            </div>
+            <div class="album">
+                <img src="h.jpg" alt="HIStory">
+                <p>HIStory</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="influence">
+        <h2>The Influence of Michael Jackson</h2>
+        <p>Michael Jackson redefined pop culture with his boundary-breaking music, unforgettable performances, and humanitarian work. His artistry continues to inspire generations of musicians, dancers, and fans worldwide.</p>
+    </section>
+
+    <section class="fun-facts">
+        <h2>Fun Facts About Michael Jackson</h2>
+        <ul>
+            <li>Michael Jackson's "Thriller" is the best-selling album of all time, with over 70 million copies sold worldwide.</li>
+            <li>He popularized the moonwalk dance move, which became one of his signature moves.</li>
+            <li>Michael owned a pet chimpanzee named Bubbles.</li>
+            <li>He was the first artist to win eight Grammy Awards in a single night in 1984.</li>
+        </ul>
+        <div class="wiki-link">
+            <a href="https://en.wikipedia.org/wiki/Michael_Jackson" target="_blank" style="color: #00aced; text-decoration: none;">Learn more about Michael Jackson on Wikipedia</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Michael Jackson Tribute. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
